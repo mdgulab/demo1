@@ -1,0 +1,216 @@
+/* Page Wrapper */
+
+
+.conference-page-wrapper{
+  font-family: Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.conference-header-section {
+  background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
+}
+
+.conference-header-subtitle  {
+  font-size: 22px;
+  color: #777;
+}
+
+.conference-header-title {
+  font-size: 40px;
+  color: #008cba;
+  margin: 10px 0;
+}
+
+.conference-theme-highlight  {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.conference-schedule-info{
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+
+/* Call-to-action buttons */
+.conference-btn1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.conference-btn1 button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.conference-btn1 button:hover {
+  opacity: 0.9;
+}
+
+.register-button{ background-color: #4caf50; color: #fff; }
+.download-brochure-button { background-color: #ff5722; color: #fff; }
+.submit-abstract-button { background-color: #2196f3; color: #fff; }
+.tentative-program-button { background-color: #ff9800; color: #fff; }
+.organizing-committee-button { background-color: #0d47a1; color: #fff; }
+
+
+/* Conference Information Section */
+.conference-info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.conference-details-content {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conference-info-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.conference-info-text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.conference-banner-image {
+  width: 50%;
+}
+
+.conference-banner {
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FAQ Section */
+.conference-faq-section {
+  margin-top: 50px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+/* Responsive Media Queries */
+
+/* Medium devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .conference-details-content {
+    width: 100%; /* Full width for the conference details */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .conference-banner-image {
+    width: 100%; /* Full width for the banner image */
+  }
+
+  .conference-header-title {
+    font-size: 32px;
+  }
+
+  .conference-header-subtitle {
+    font-size: 20px;
+  }
+
+  .conference-info-title {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .conference-header-title {
+    font-size: 28px;
+  }
+
+  .conference-header-subtitle {
+    font-size: 18px;
+  }
+
+  .conference-theme-highlight {
+    font-size: 16px;
+  }
+
+  .conference-info-section {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .conference-details-content,
+  .conference-banner-image {
+    width: 100%;
+    margin-bottom: 20px; /* Adds space between stacked sections */
+  }
+
+  .conference-info-title {
+    font-size: 18px;
+  }
+
+  .conference-info-text {
+    font-size: 14px;
+  }
+
+  .conference-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+}
+
+/* Extra small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .conference-header-title {
+    font-size: 24px;
+  }
+
+  .conference-header-subtitle {
+    font-size: 16px;
+  }
+
+  .conference-theme-highlight {
+    font-size: 14px;
+  }
+
+  .conference-info-title {
+    font-size: 16px;
+  }
+
+  .conference-info-text {
+    font-size: 13px;
+  }
+
+  .conference-btn {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .faq-title {
+    font-size: 18px;
+  }
+}

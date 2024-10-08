@@ -1,0 +1,293 @@
+/* General Styling */
+body {
+  margin: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homepage {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 40vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  filter: blur(0px);
+}
+
+.overlay {
+  margin-top: 3%;
+  background-color: #070707a6;
+  border: 1px solid #f0f0f0;
+  box-shadow: 2px 5px 8px #4b4b4b;
+  border-radius: 10px;
+  width: 70%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.overlay h2 {
+  color: #f2602b;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.overlay p {
+  color: #ebebeb;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  padding: 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e03f04;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+  gap: 5%;
+  box-shadow: 2px 2px 3px black;
+  padding-left: 5%;
+  padding-right: 1%;
+}
+
+.about-text {
+  flex: 1;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-image {
+  flex: 1;
+  padding-bottom: 2%;
+}
+
+.about-img {
+  width: 80%;
+  height: 21rem;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 2rem 1rem 4rem 1rem;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.336);
+}
+
+.HomeP1 {
+  text-align: justify;
+}
+
+/* Conference Cards Section */
+
+/* Organizing Committee Section */
+
+/* Why Attend Section */
+.attend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  padding: 2%;
+}
+
+.card4 {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid black;
+  width: 27%;
+  padding: 10px;
+}
+
+/* Icons */
+.icons {
+  width: 25%;
+  margin: 10%;
+}
+
+/* Frequently Asked Questions (FAQs) */
+.accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.accordion-title:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.accordion-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.accordion span {
+  font-size: 1.5rem;
+}
+
+/* Other Styling */
+.welcome-message {
+  display: flex;
+  text-align: center;
+  background-color: #ebebeb;
+  padding: 10px;
+  border: 5px solid rgb(207, 207, 207);
+  border-radius: 2rem 1rem 7rem 1rem;
+}
+
+.gradient-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.gradient-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, orange, purple);
+  z-index: -1;
+}
+/* Media Partners */  
+  @media (max-width: 1024px) {
+    .about-section {
+      flex-direction: column;
+    }
+  
+    .about-img {
+      width: 80%;
+      height: auto;
+    }
+  
+     .conference-card2 {
+      width: 45%;
+    }
+  
+    .card4 {
+      width: 45%;
+    }
+  
+    .welcome-message {
+      flex-direction: column;
+    }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+    }
+  
+    .overlay h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-section {
+      flex-direction: column;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  
+    .conference-card2 {
+      max-width:2000px;
+    }
+  
+    .about-img, .img1, .conferenceImg1 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .icons {
+      width: 50%;
+    }
+    
+  }
+  
+  
+    .hero {
+      height: 40vh;
+      margin-bottom: 20px;
+    }
+  .overlay{
+    margin-top: 45px;
+    width: 320px;
+    
+  }
+    .overlay h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      padding: 0.5rem 1rem;
+    }
+  
+    .icons {
+      width: 100%;
+    }
+  
+    .welcome-message {
+      padding: 5%;
+    }
+  }
+}
